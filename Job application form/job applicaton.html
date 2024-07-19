@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JOB application form</title>
+  <link rel="stylesheet" href="./job application.css">
+</head>
+<body>
+  <header>
+    <h1 id="page_title">JOB application form</h1>
+  </header>
+  <main>
+    <div id="form_container">
+      <form action="/submit-to.PHP">
+
+
+        <div id="First_Name_Last_Name">
+        <label for="First_Name">First Name :</label> <br>
+        <input type"Name" id="First_Name" placeholder="Enter First Name...">
+        <br>
+        <label for="Last_Name">Last Name :</label> 
+        <br>
+        <input type="Name" id="Last_Name" placeholder="Enter Last Name...">
+      </div>
+
+
+
+      <div id="Email_Job_Role">
+        <label for="Email">Email :</label>
+        <br>
+        <input type="email" id="Email" placeholder="Enter Email...">
+        <br>
+        <label for="Job_Role">Job role</label>
+        <br>
+        <select name="Job Role" id="Job_Role">
+            <option value="No selection">Select Job Role</option>
+            <option value="Frontend dev">Frontend Developer</option>
+            <option value="Backend dev">Backend Developer</option>
+            <option value="Full stack dev">Full stack Developer</option>
+        </select>
+      </div>
+
+
+
+      <div id="Address">
+        <label for="Address">Address</label>
+        <br>
+        <textarea name="Enter Address" id="Address">Enter Address...</textarea>
+      </div>
+
+
+
+
+      <div id="City_Date">
+        <label for="City">Enter city :</label>
+        <br>
+        <input type="text" id="City" placeholder="Enter City Name...">
+        <br>
+        <label for="Date">Preferred Joining Date</label>
+        <br>
+        <input type="date" id="Date">
+      </div>
+
+
+      <div id="Pincode_CV">
+        <label for="Pincode">Pincode :</label>
+        <br>
+        <input type="text" id="Pincode" placeholder="Enter Pincode...">
+        <br>
+        <label for="CV">Upload Your CV :</label>
+        <br>
+        <input type="file" id="CV" >
+
+      </div>
+
+
+      
+        <input type="submit" placeholder="Submit" id="submit" name="submit">
+
+      </form>
+    </div>
+  </main>
+</body>
+</html>

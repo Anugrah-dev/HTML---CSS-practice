@@ -1,0 +1,23 @@
+*{
+  font-size: 25px;
+  margin: 20px 5px;
+}
+#submit{
+  border: none;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 45px;
+  position: relative;
+  left: 39%;
+}
+#CV{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(150, 150, 150);
+  padding: 5px;
+}
+
+
+
