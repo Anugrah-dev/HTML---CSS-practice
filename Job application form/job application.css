@@ -1,23 +1,76 @@
-*{
-  font-size: 25px;
-  margin: 20px 5px;
+/* General styles for all elements */
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  font-family: Arial, sans-serif; /* Uses a modern, web-safe font */
+  font-size: 16px; /* Sets a standard font size for readability */
+  margin: 0; /* Resets default margin */
+  padding: 0; /* Resets default padding */
 }
-#submit{
+
+/* Container for form elements */
+#form-container {
+  max-width: 800px; /* Set a maximum width for better readability */
+  margin: 0 auto; /* Center the form container */
+  padding: 20px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Add a light border around the container */
+  border-radius: 10px; /* Rounded corners for the container */
+  background-color: #f9f9f9; /* Light background color for better contrast */
+}
+
+/* Styles for submit button */
+#submit {
   border: none;
   border-radius: 15px;
   background-color: red;
   color: white;
-  width: 100px;
-  height: 45px;
-  position: relative;
-  left: 39%;
+  width: 120px; /* Sufficient width for the button */
+  height: 50px; /* Sufficient height for the button */
+  display: block; /* Ensure the button takes up the entire width of its container */
+  margin: 20px auto; /* Center the button horizontally and add spacing */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  font-size: 16px; /* Ensure font size is consistent */
 }
-#CV{
+
+/* Styles for file input */
+#CV {
   border: 2px solid black;
   border-radius: 10px;
-  background-color: rgb(150, 150, 150);
-  padding: 5px;
+  background-color: rgb(200, 200, 200); /* Lighter grey for better contrast */
+  padding: 10px; /* Increased padding for better appearance */
+  display: block; /* Ensure it takes up the full width of its container */
+  margin-top: 10px; /* Add top margin for spacing */
 }
 
+/* Styles for form elements */
+.form-group {
+  margin-bottom: 20px; /* Spacing between form groups */
+}
 
+/* Styles for input and textarea fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%; /* Make fields fill the container width */
+  padding: 10px; /* Add padding for better text readability */
+  border-radius: 5px; /* Rounded corners for inputs */
+  border: 1px solid #ccc; /* Light border for inputs */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 16px; /* Ensure font size is consistent */
+}
 
+/* Styles for select dropdown */
+select {
+  width: 100%; /* Make dropdown fill the container width */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  font-size: 16px; /* Ensure font size is consistent */
+}
+
+/* Styles for labels */
+label {
+  display: block; /* Ensure labels take up the full width of their container */
+  margin-bottom: 5px; /* Add space between label and form element */
+  font-weight: bold; /* Make labels stand out */
+}

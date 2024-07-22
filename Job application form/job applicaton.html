@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Application Form</title>
-  <link rel="stylesheet" href="./job-application.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="job-application.css">
 </head>
+
 <body>
-  <header>
-    <h1 id="page_title">Job Application Form</h1>
-  </header>
-  <main>
-    <div id="form_container">
-      <form action="/submit-to.php" method="post">
+    <header>
+        <h1 id="page-title">Job Application Form</h1>
+    </header>
+    <main>
+        <section id="form-container">
+            <form action="/submit-to.php" method="post" enctype="multipart/form-data">
 
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="Enter First Name" required>
+                    </div>
 
-        <div id="First_Name_Last_Name">
-          <label for="First_Name">First Name :</label> <br>
-          <input type="text" id="First_Name" name="First_Name" placeholder="Enter First Name...">
-          <br>
-          <label for="Last_Name">Last Name :</label> 
-          <br>
-          <input type="text" id="Last_Name" name="Last_Name" placeholder="Enter Last Name...">
-        </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Enter Last Name" required>
+                    </div>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                    </div>
 
-        <div id="Email_Job_Role">
-          <label for="Email">Email :</label>
-          <br>
-          <input type="email" id="Email" name="Email" placeholder="Enter Email...">
-          <br>
-          <label for="Job_Role">Job Role :</label>
-          <br>
-          <select name="Job_Role" id="Job_Role">
-            <option value="">Select Job Role</option>
-            <option value="Frontend dev">Frontend Developer</option>
-            <option value="Backend dev">Backend Developer</option>
-            <option value="Full stack dev">Full Stack Developer</option>
-          </select>
-        </div>
+                    <div class="form-group">
+                        <label for="job-role">Job Role:</label>
+                        <select id="job-role" name="job_role" required>
+                            <option value="" disabled selected>Select Job Role</option>
+                            <option value="frontend_dev">Frontend Developer</option>
+                            <option value="backend_dev">Backend Developer</option>
+                            <option value="full_stack_dev">Full Stack Developer</option>
+                        </select>
+                    </div>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Address Information</legend>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" placeholder="Enter Address" rows="4" required></textarea>
+                    </div>
 
-        <div id="Address">
-          <label for="Address">Address</label>
-          <br>
-          <textarea name="Address" id="Address" placeholder="Enter Address..."></textarea>
-        </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="Enter City" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="date">Preferred Joining Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
 
-        <div id="City_Date">
-          <label for="City">Enter City :</label>
-          <br>
-          <input type="text" id="City" name="City" placeholder="Enter City Name...">
-          <br>
-          <label for="Date">Preferred Joining Date</label>
-          <br>
-          <input type="date" id="Date" name="Date">
-        </div>
+                    <div class="form-group">
+                        <label for="pincode">Pincode:</label>
+                        <input type="text" id="pincode" name="pincode" placeholder="Enter Pincode" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="cv">Upload Your CV:</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                    </div>
+                </fieldset>
 
-        <div id="Pincode_CV">
-          <label for="Pincode">Pincode :</label>
-          <br>
-          <input type="text" id="Pincode" name="Pincode" placeholder="Enter Pincode...">
-          <br>
-          <label for="CV">Upload Your CV :</label>
-          <br>
-          <input type="file" id="CV" name="CV">
-        </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" name="submit">Submit</button>
+                </div>
 
-        <input type="submit" value="Submit" id="submit" name="submit">
-
-      </form>
-    </div>
-  </main>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
