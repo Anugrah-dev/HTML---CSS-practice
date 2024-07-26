@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* || CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ||BG COLOR */
+body {
+  background-color: hsla(180, 100%, 50%, 0.582);
+}
+
+
+main {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-image: url(./img/BG.png);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form_container {
+  margin-top: 20px;
+  min-height: 80vh;
+  width: 60vw;
+  padding: 24px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.932);
+}
+
+#first_name, #last_name, #email, #job_role, #city, #pincode, #joining_date, #cv_upload {
+  font-size: 1.5em;
+  border-radius: 0.3rem;
+}
+
+/* ||to increase the size of titles */
+label {
+  font-size: 1.4rem;
+}
+
+
+
+/* || Writing the span here to get there input below them */
+/* .container_for_first_name, .container_for_last_name {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 10px;
+} */
+
+span {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 20px;
+}
+
+
+select {
+  display: flex;
+  flex-flow: column nowrap;
+}
+ 
+#job_role {
+  font-size: 1.93rem;
+}
+
+
+.container_for_first_and_last_name, .container_for_email_job_role, .container_for_address, .container_for_city_pincode, .container_for_date_cv{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.container_for_address {
+  justify-content: left;
+  margin-left: 4.25rem;
+}
+
+
+#address {
+  font-size: 2rem;
+
+}
+
+#joining_date {
+  font-size: 1.5rem;
+}
+
+
+
+
+
+

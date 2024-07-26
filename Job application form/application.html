@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application</title>
+  <link rel="stylesheet" href="./application.css">
+</head>
+<body>
+  <main>
+    <section class="form_container">
+      <h1>Job Application</h1>
+
+      <div class="container_for_first_and_last_name">
+
+        <span class="container_for_first_name">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" placeholder="Enter First Name.....">
+        </span>
+
+        <span class="container_for_last_name">
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" placeholder="Enter Last Name.....">
+        </span>
+
+      </div>
+
+      <div class="container_for_email_job_role">
+
+        <span class="container_for_email">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter Your Email...">
+        </span>
+
+        <span class="container_for_job_role">
+          <form>
+          <label for="job_role">Job Role</label>
+          <select name="role" id="job_role">
+            <option value="">Select Job Role</option>
+            <option value="frontend_dev">Frontend Developer</option>
+            <option value="backend_dev">Backend Developer</option>
+            <option value="fullstack_dev">Fullstack Developer</option>
+          </select>
+          </form>
+        </span>
+          
+
+      </div>
+
+      <div class="container_for_address">
+        <span class="span_address">
+        <label for="address">Enter Address</label>
+        <textarea id="address" placeholder="Enter Your Address..." rows="3" cols="41" ></textarea>
+      </span>
+      </div>
+
+
+      <div class="container_for_city_pincode">
+
+        <span class="container_for_city">
+          <label for="city">City:</label>
+          <input type="text" id="city" placeholder="Enter City...">
+        </span>
+
+        <span class="container_for_pincode">
+          <label for="pincode">Pincode:</label>
+          <input type="number" id="pincode" placeholder="Enter Pincode...">
+        </span>
+
+      </div>
+
+      <div class="container_for_joining_date_cv">
+
+        <span class="container_for_date">
+          <label for="joining_date">Joining Date</label>
+          <input type="date" id="joining_date" >
+        </span>
+
+        <span class="container_for_cv">
+          <label for="cv_upload">Upload Your CV</label>
+          <input type="file" id="cv_upload">
+        </span>
+
+      </div>
+
+
+    </section>
+  </main>
+</body>
+</html>
