@@ -95,6 +95,20 @@ select {
 }
 
 
+#button {
+  border: none;
+  background-color: red;
+  width: 140px;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+
+.container_for_button {
+  text-align: right;
+}
+
+
 
 
 
